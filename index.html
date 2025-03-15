@@ -3,25 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fox Chat</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Timer for Business Talk</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <h2>Fox Chat</h2>
-            <button id="createServerBtn">Create Server</button>
-            <div id="serverList"></div>
+        <h1>Business Talk Timer</h1>
+        <div class="input-section">
+            <input type="text" id="businessName" placeholder="Enter business name" />
+            <button id="startButton">Start</button>
+            <button id="stopButton" disabled>Stop</button>
         </div>
-
-        <div class="main">
-            <div id="channelList"></div>
-            <div id="chatWindow">
-                <div id="messages"></div>
-                <input type="text" id="messageInput" placeholder="Type a message...">
-                <button id="sendMessageBtn">Send</button>
-            </div>
-        </div>
+        <p id="timerDisplay">0:00 - No talk started</p>
     </div>
 
     <script src="script.js"></script>
